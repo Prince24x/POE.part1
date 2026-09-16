@@ -4,13 +4,12 @@ import java.util.Scanner ;
      void main() {
          // Declarations
          String username;
+         String username2;
          String password;
          String password2;
          String phonenumber;
          String firstName;
-         String firstName1;
          String lastName;
-         String lastName2 = "";
          boolean hasCapital = false;
          boolean hasnumber = false;
          boolean specialcharacter = false;
@@ -18,7 +17,7 @@ import java.util.Scanner ;
          //Prompting the user first name and surname
          System.out.println("Please enter your first name");
          firstName = sc.nextLine();
-         System.out.println("Please enter your surname");
+         System.out.println("Please enter your last name");
          lastName = sc.nextLine();
 
          //Prompting the username from the user
@@ -45,7 +44,7 @@ import java.util.Scanner ;
 
          //Checking the conditions for the phone number
          while (true) {
-             if (phonenumber.startsWith("+27") && phonenumber.length() <= 11) {
+             if (phonenumber.startsWith("+27") && phonenumber.length() <= 12) {
                  System.out.println(" Cell phone number successfully added");
                  break;
              } else {
@@ -86,23 +85,19 @@ import java.util.Scanner ;
              }
          }
          // Login part
-         System.out.println("Please enter your details");
-         System.out.println("First name:");
-         firstName1 = sc.nextLine();
-         System.out.println("Last name:");
-         lastName2 = sc.nextLine();
+         System.out.println("Please login your details:");
+         System.out.println("Username:");
+         username2 = sc.nextLine();
          System.out.println("Password:");
          password2 = sc.nextLine();
          while (true){
-             if (firstName1.matches(firstName)&& lastName2.matches(lastName)&& password2.matches(password)){
-                 System.out.println("Welcome "+ firstName1 +" " + lastName2 + " it is great to see you again!");
+             if (username2.matches(username)&& password2.matches(password)){
+                 System.out.println("Welcome "+ firstName +" " + lastName + " it is great to see you again!");
                  break;
              } else{
                  System.out.println("Username or password incorrect , please try again");
-                 System.out.println("First name:");
-                 firstName1 = sc.nextLine();
-                 System.out.println("Last name:");
-                 lastName2 = sc.nextLine();
+                 System.out.println("Username");
+                 username2 = sc.nextLine();
                  System.out.println("Password:");
                  password2 = sc.nextLine();
              }
