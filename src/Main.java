@@ -15,13 +15,13 @@ import java.util.Scanner ;
          boolean specialcharacter = false;
          Scanner sc = new Scanner(System.in);
          //Prompting the user first name and surname
-         System.out.println("Please enter your first name");
+         System.out.println("Please enter your first name:");
          firstName = sc.nextLine();
-         System.out.println("Please enter your last name");
+         System.out.println("Please enter your last name:");
          lastName = sc.nextLine();
 
          //Prompting the username from the user
-         System.out.println("Please enter your username");
+         System.out.println("Please enter your username:");
          username = sc.nextLine();
          //Checking the conditions for the username
          while (true) {
@@ -84,19 +84,22 @@ import java.util.Scanner ;
                  password = sc.nextLine();
              }
          }
+         System.out.println("------------------Registration successful-----------------------");
          // Login part
+         //Prompting the user for the login informations
          System.out.println("Please login your details:");
          System.out.println("Username:");
          username2 = sc.nextLine();
          System.out.println("Password:");
          password2 = sc.nextLine();
+         // Checking the conditions for the login
          while (true){
              if (username2.matches(username)&& password2.matches(password)){
                  System.out.println("Welcome "+ firstName +" " + lastName + " it is great to see you again!");
                  break;
              } else{
-                 System.out.println("Username or password incorrect , please try again");
-                 System.out.println("Username");
+                 System.out.println("Username or password incorrect , please try again:");
+                 System.out.println("Username:");
                  username2 = sc.nextLine();
                  System.out.println("Password:");
                  password2 = sc.nextLine();
