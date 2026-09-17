@@ -14,6 +14,7 @@ void userInput(){
     System.out.println("Please enter your last name:");
     lastName = sc.nextLine();
 }
+//Method to check the username condition
 boolean checkUserName(String username){
         while (true) {
 
@@ -32,6 +33,7 @@ boolean checkUserName(String username){
 
     return true;
 }
+// Method to check the cellphone number condition
 boolean checkCellPhoneNumber(String phonenumber){
     while (true) {
         if (phonenumber.startsWith("+27") && phonenumber.length() <= 12) {
@@ -44,6 +46,7 @@ boolean checkCellPhoneNumber(String phonenumber){
     }
     return true;
 }
+// Method to check the password conditions
 boolean checkPasswordComplexity(String password){
     while (true) {
         boolean hasnumber = false;
@@ -74,6 +77,7 @@ boolean checkPasswordComplexity(String password){
     }
     return true;
 }
+// Method to check the login features
 boolean loginUser(String username2 , String password2, String username , String password){
     while (true){
         if (username2.matches(username)&& password2.matches(password)){

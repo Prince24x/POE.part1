@@ -3,22 +3,22 @@ import java.util.Scanner ;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
      void main() {
          // Declarations
+         Scanner sc = new Scanner(System.in);
          String username;
          String username2;
          String password;
          String password2;
          String phonenumber;
 
-
-         Scanner sc = new Scanner(System.in);
+         Login userLogin = new Login();
          //Prompting the user first name and surname
-          Login userLogin = new Login();
           userLogin.userInput();
 
 
          //Prompting the username from the user
          System.out.println("Please enter your username:");
          username = sc.nextLine();
+
          //Checking the conditions for the username
          userLogin.checkUserName(username);
          //Prompting the phone number from the user
