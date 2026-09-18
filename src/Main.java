@@ -18,7 +18,6 @@ import java.util.Scanner ;
          //Prompting the username from the user
          System.out.println("Please enter your username:");
          username = sc.nextLine();
-
          //Checking the conditions for the username
          userLogin.checkUserName(username);
          //Prompting the phone number from the user

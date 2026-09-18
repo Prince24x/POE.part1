@@ -2,11 +2,7 @@ import java.util.Scanner;
 public class Login {
     String firstName;
     String lastName;
-    String username;
-    String phonenumber;
-    String password;
-    String username2;
-    String password2;
+
 Scanner sc = new Scanner(System.in);
 void userInput(){
     System.out.println("Please enter your first name:");
@@ -17,7 +13,6 @@ void userInput(){
 //Method to check the username condition
 boolean checkUserName(String username){
         while (true) {
-
             if (username.contains("_") && username.length() <= 6) {
                 System.out.println("Username successfully captured");
                 break;
@@ -93,4 +88,8 @@ boolean loginUser(String username2 , String password2, String username , String 
     }
     return true;
 }
+
+    public boolean checkPasswordCompllexity(String s) {
+        return false;
+    }
 }
