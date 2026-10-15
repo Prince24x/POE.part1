@@ -3,12 +3,13 @@ import java.util.Scanner ;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
      void main() {
          // Declarations
+
          Scanner sc = new Scanner(System.in);
          String username;
          String username2;
          String password;
          String password2;
-         String phonenumber;
+         String phoneNumber;
 
          Login userLogin = new Login();
          //Prompting the user first name and surname
@@ -22,10 +23,10 @@ import java.util.Scanner ;
          userLogin.checkUserName(username);
          //Prompting the phone number from the user
          System.out.println("Please enter your phone number:");
-         phonenumber = sc.nextLine();
+         phoneNumber = sc.nextLine();
 
          //Checking the conditions for the phone number
-         userLogin.checkCellPhoneNumber(phonenumber);
+         userLogin.checkCellPhoneNumber(phoneNumber);
          //Prompting the password from the user
          System.out.println("Please enter your password:");
          password = sc.nextLine();
@@ -44,4 +45,6 @@ import java.util.Scanner ;
          // Checking the conditions for the login
       userLogin.loginUser(username2 , password2 , username , password );
          System.out.println("----------------------Login Successful----------------------");
+
+
      }

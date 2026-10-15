@@ -15,7 +15,7 @@ public void testCheckUserNameIncorrect() {
 
     @Test
     public void testPasswordComplexitycorrect() {
-        assertTrue(login.checkPasswordCompllexity("ch&&sec@ke99"));
+        assertTrue(login.checkPasswordComplexity("ch&&sec@ke99"));
     }
 
     @Test
