@@ -1,0 +1,4 @@
+For this we are creating a login feature that allows the user to enter his details and successfully login
+The first part is the registration part , the user is asked to enter his first name , last name , username ,password  and cellphone number
+For the username ,password and cellphone number there are certain conditions to meet , if they are not met a specific message is displayed ,the user cannot continue and is asked to try again. Otherwise if they are met a specific message is displayed and the user can now login
+The last part which is the Login , the user is asked to enter the username and password , if the username and password are the same as entered in the registration , a specific message is displayed and the login is successful ,if not another message is displayed and the user is asked to try again
