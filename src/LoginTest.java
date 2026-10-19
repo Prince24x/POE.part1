@@ -20,8 +20,15 @@ public void testCheckUserNameIncorrect() {
 
     @Test
     public void testPasswordComplexityIncorrect() {
-        assertFalse(login.checkPasswordComplexity("Password123!"));
+        assertFalse(login.checkPasswordComplexity("Password"));
     }
-
+@Test
+    public void testCellphoneCorrect(){
+        assertTrue(login.checkCellPhoneNumber("+27838968976"));
+}
+@Test
+    public void testCellphoneIncorrect(){
+        assertFalse(login.checkCellPhoneNumber("08966553"));
+}
 
 }

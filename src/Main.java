@@ -45,6 +45,52 @@ import java.util.Scanner ;
          // Checking the conditions for the login
       userLogin.loginUser(username2 , password2 , username , password );
          System.out.println("----------------------Login Successful----------------------");
+// Part 2 : Sending messages
+
+
+         int choice = 0;
+         int numberOfMessages;
+
+         Message message = new Message();
+
+         while (choice != 3) {
+
+             System.out.println("\nWelcome to QuickChat");
+             System.out.println("1: Send message");
+             System.out.println("2: Show recently sent messages");
+             System.out.println("3: Quit");
+             System.out.println("Please choose an option:");
+
+             choice = sc.nextInt();
+             sc.nextLine();
+
+             if (choice == 1) {
+
+                 System.out.println("How many messages do you want to send?");
+                 numberOfMessages = sc.nextInt();
+                 sc.nextLine();
+
+                 for (int i = 0; i < numberOfMessages; i++) {
+                     System.out.println("\nMessage " + (i + 1));
+
+                     message.createMessage(sc);
+                     message.printMessage();
+                     message.sentMessage(sc);
+                 }
+
+             } else if (choice == 2) {
+
+                 System.out.println("Coming soon");
+
+             } else if (choice == 3) {
+
+                 System.out.println("Thank you for using QuickChat!");
+
+             } else {
+
+                 System.out.println("Invalid option. Please choose 1, 2 or 3.");
+             }
+         }
 
 
      }

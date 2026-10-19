@@ -19,12 +19,14 @@ boolean checkUserName(String username){
                 System.out.println("Username successfully captured");
                 return true;
             } else {
+
                 System.out.println("Username is not correctly formated; please " +
                         "ensure that " +
                         "your username contains " +
                         "an underscore" +
                         " and is no more than five characters in length");
                 username = sc.nextLine();
+
             }
         }
 
