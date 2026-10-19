@@ -3,7 +3,7 @@ import java.util.Scanner ;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
      void main() {
          // Declarations
-  /*
+
          Scanner sc = new Scanner(System.in);
          String username;
          String username2;
@@ -49,10 +49,9 @@ import java.util.Scanner ;
 
 
 
-           */
+
 // Part 2 : Sending messages
 
-         Scanner sc = new Scanner(System.in);
 
          int choice = 0;
          int numberOfMessages;
