@@ -3,7 +3,7 @@ import java.util.Scanner ;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
      void main() {
          // Declarations
-
+  /*
          Scanner sc = new Scanner(System.in);
          String username;
          String username2;
@@ -45,8 +45,14 @@ import java.util.Scanner ;
          // Checking the conditions for the login
       userLogin.loginUser(username2 , password2 , username , password );
          System.out.println("----------------------Login Successful----------------------");
+
+
+
+
+           */
 // Part 2 : Sending messages
 
+         Scanner sc = new Scanner(System.in);
 
          int choice = 0;
          int numberOfMessages;
@@ -71,7 +77,7 @@ import java.util.Scanner ;
                  sc.nextLine();
 
                  for (int i = 0; i < numberOfMessages; i++) {
-                     System.out.println("\nMessage " + (i + 1));
+                     System.out.println("\nMessage: " + (i + 1));
 
                      message.createMessage(sc);
                      message.printMessage();

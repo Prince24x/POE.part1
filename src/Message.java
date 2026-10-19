@@ -52,10 +52,12 @@ public class Message {
             System.out.println("Enter your message (maximum 250 characters):");
             messageText = sc.nextLine();
 
-            if (messageText.length() <= 250) {
-                break;
+            if (messageText.isEmpty()) {
+                System.out.println("Write something please!");
+            } else if (messageText.length()>250){
+                    System.out.println("Your message is too long please try again");
             } else {
-                System.out.println("Message is too long. Try again.");
+                break;
             }
         }
 
@@ -90,11 +92,11 @@ public class Message {
 
         int option = -1;
 
-        while (option != 1 && option != 0 && option != 2) {
+        while (option != 1 && option != 2 && option != 3) {
 
             System.out.println("\n1: Send message");
-            System.out.println("0: Disregard message");
-            System.out.println("2: Store message to send later");
+            System.out.println("2: Disregard message");
+            System.out.println("3: Store message to send later");
             System.out.println("Choose an option:");
 
             option = sc.nextInt();
